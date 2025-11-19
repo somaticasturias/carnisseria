@@ -1,0 +1,241 @@
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    width: 100%;
+    height: 100%;
+    background-color: #e0b68d;  
+    font-family: "Fraunces", serif;
+  }
+  header {
+    background: linear-gradient(to bottom, #513b2f, #2b2018);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 2px solid white;
+    position: relative;
+  }
+  .logo {
+    width: 50%;
+      height: auto;
+  }   
+  .logo img {
+    width: 70%;
+    height: auto;
+    display: block;
+  }
+  .hamburguesa {
+    font-size: 24px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: white;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;    
+    background-color: #513b2f;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+  }
+  .menu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #2b2018;
+  }    
+  .menu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #2b2018;
+  }
+  .menu a:last-child {
+    border-bottom: none;
+  }
+  .menu.mostrar {
+    display: flex;
+  }
+  section {
+    padding: 36px 20px;
+    border-bottom: 1px solid #2b2018;
+  }
+  .fotos {
+    width: 100%;
+    margin: 1rem auto 1rem auto;
+    display: block;
+    border-radius: 6px;
+  }
+  h2 {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  #tornar-adalt {
+    position: fixed;
+    bottom: 74px;
+    right: 6px;
+    background-color: #513b2f;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 12px 16px;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    display: none; 
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+  }
+  .contacto ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;   
+  }
+  .contacto li {
+    margin-bottom: 0.5rem; 
+  }
+  .contacto a {
+    text-decoration: none; 
+  }
+  .mapa {    
+    width: 100%;
+    max-width: 30em;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 2rem auto;
+  }
+  footer {
+    width: 100%;
+    height: auto;
+  }
+  .pie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #2b2018, #513b2f);
+  }
+  .pie .logo-valid img {
+    width: 72%;
+  }
+  .pie .enlace a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.75rem;
+  }
+  .pie .enlace a:hover {
+    color: #007BFF; /* Cambia el color al pasar el cursor */
+  }
+  .menu {
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    background-color: #513b2f;
+    border-radius: 6px;
+    overflow: hidden;
+    z-index: 10;
+  }
+  .menu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #2b2018;
+  }
+  .demo {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  p {
+    text-align: left;
+    font-size: 1rem;
+  }
+  .logo-soma {
+    width: 20%;
+    margin: 20px 0 20px 0;
+  }
+@media (min-width: 800px) and (max-width: 1280px) and (orientation: portrait) {
+  .fotos {
+    width: 54%;
+  }
+  p {
+    margin: auto 9em;
+  }
+  .logo img {
+    width: 46%;
+  }
+  .contacto {
+  margin: 0 9rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 1280px) and (orientation: landscape) {
+  .hamburguesa {
+    display: none;
+  }
+  .menu {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    align-items: center;
+    gap: 1rem;
+    bottom: 2rem;
+  }
+  .menu a {
+    border-bottom: none;
+    padding: 0 12px;
+    white-space: nowrap;
+  }
+  .logo img {
+    width: 40%;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1281px) {
+  .hamburguesa {
+    display: none;
+  }
+  .menu {
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    align-items: center;
+    gap: 1rem;
+    bottom: 2rem;
+  }
+  .menu a {
+    border-bottom: none;
+    padding: 0 12px;
+    white-space: nowrap;
+  }
+  .fotos {
+    width: 54%;
+  }
+  p {
+    margin: auto 22em;
+  }
+  .logo img {
+    width: 46%;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .contacto  {
+    margin-left: 34em;
+  }
+  .pie .logo-valid img {
+    width: 100%;
+  }
+}

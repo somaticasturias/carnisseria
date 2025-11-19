@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="A10-Miau y marcuesbo">
+  <meta name="website" content="https://www.somaticasturias.es">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <title>Carnisseria</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./img/logo_carnisseria.png" alt="Exemple d'una pàgina web per una Carnisseria">
+        </a>
+      </div>
+      <button class="hamburguesa" onclick="toggleMenu()">☰</button>
+      <nav class="menu" id="menu">
+          <a href="#inici">Inici</a>
+          <a href="#carns">Carns fresques</a>
+          <a href="#plats">Plats preparats</a>
+          <a href="#capricis">Petits capricis</a>
+          <a href="#formatges">Formatges</a>
+          <a href="#embotits">Embotits</a>
+          <a href="#contacte">Contacte</a>
+      </nav>
+  </header>
+  <section id="inici">
+    <h2>Inici</h2>
+    <img src="./img/carnisseria_demo.jpg" alt="Interior d'una carnisseria de principis del segle XX" class="fotos">
+    <p>
+      Fundada l&#39;any 1921, aquesta casa &eacute;s el reflex d&#39;un <strong>negoci familiar que ha sabut preservar la
+       seva ess&egrave;ncia al llarg de quatre generacions</strong>. Amb dedicaci&oacute; i const&agrave;ncia, ens hem especialitzat
+       en la <strong>venda i l&#39;elaboraci&oacute; de productes c&agrave;rnics i plats preparats</strong>, mantenint sempre 
+       el comprom&iacute;s amb la qualitat i la confian&ccedil;a.
+    </p>
+    <br>
+    <p>
+      Gr&agrave;cies a la fidelitat dels nostres clients, hem pogut cr&eacute;ixer i evolucionar sense perdre les arrels. 
+      <strong>Oferim un ampli assortiment de productes artesans</strong>, elaborats amb cura i respecte per la tradici&oacute;, 
+      i seleccionem les millors carns per garantir un sabor aut&egrave;ntic i una experi&egrave;ncia &uacute;nica.
+    </p>
+    <br>
+    <p>
+      Amb una mirada cap al futur i el cor posat en la tradici&oacute;, <strong>continuem treballant dia 
+      a dia per oferir el millor</strong>, amb el tracte proper i familiar que ens caracteritza.
+    </p>
+  </section>
+  <section id="carns">
+    <h2>Carns fresques</h2>
+    <img src="./img/carns_demo.jpg" alt="Bodegó de carns fresques" class="fotos">
+    <p>
+      A la nostra carnisseria oferim <strong>una selecci&oacute; completa de carns fresques i elaborats</strong>, pensada per satisfer els
+       paladars m&eacute;s exigents. Treballem amb <strong>xai</strong>, <strong>vedella</strong>, <strong>porc</strong> i 
+       <strong>aviram</strong>, procedents de prove&iuml;dors de confian&ccedil;a que garanteixen una tra&ccedil;abilitat 
+       clara i unes condicions de <strong>cria respectuoses amb el benestar animal</strong>. Cada tall &eacute;s escollit amb cura, mantenint
+       el comprom&iacute;s amb la frescor, el sabor i la textura que defineixen un producte de qualitat superior.
+    </p>
+    <img src="./img/elaboracio_propia_demo.png" alt="Plats prepartas d'elaboració propia" class="fotos">
+    <p>
+      A m&eacute;s de les carns tradicionals, disposem d&rsquo;un ampli ventall de <strong>productes elaborats</strong> que
+       combinen receptes artesanes amb ingredients seleccionats. <strong>Des d&rsquo;hamburgueses casolanes fins a mandonguilles, 
+       croquetes o plats preparats</strong>, cada elaboraci&oacute; reflecteix l&rsquo;experi&egrave;ncia acumulada al llarg de
+       generacions i l&rsquo;atenci&oacute; als detalls que ens caracteritza.
+    </p>
+  </section>
+  <section id="plats">
+    <h2>Plats preparats</h2>
+    <img src="./img/plat_demo.jpg" alt="Plat de pasta" class="fotos">
+    <p>
+      La nostra proposta de plats preparats ofereix una varietat pensada per a tots els gustos i moments. 
+      Des de <strong>receptes amb carn</strong> seleccionada, cuinades amb cura per preservar tot el seu sabor, fins a opcions
+      amb <strong>pasta que combinen textures i salses artesanes</strong>.
+    </p>
+    <img src="./img/peix_demo.jpg" alt="Peix" class="fotos">
+    <p>
+      Tamb&eacute; comptem amb <strong>elaboracions a base de peix</strong>, lleugeres i nutritives, ideals per a qui busca una alternativa
+      saludable sense renunciar al gust. <strong>Les sopes, preparades amb ingredients frescos</strong>, aporten calidesa i tradici&oacute;
+      a la taula, mentre que <strong>els plats amb vegetals</strong> destaquen per la seva frescor, color i equilibri.
+    </p> 
+  </section>
+  <section id="capricis">
+    <h2>Petits capricis</h2>
+    <img src="./img/capricis_demo.jpg" alt="Petits capricis" class="fotos">
+    <p>
+      A la nostra botiga, els petits capricis no s&oacute;n simples complements: s&oacute;n instants de desig, 
+      gestos que transformen el quotidi&agrave; en ritual.
+      <strong>Els olis, premsats amb cura</strong>, conserven l&rsquo;ess&egrave;ncia de la terra i aporten aroma i textura amb cada gota, 
+      <strong>ideals per potenciar plats o degustar amb pa artes&agrave;</strong>.
+      <strong>Les olives, verdes, negres o farcides</strong>, s&oacute;n petites explosions de sabor que acompanyen 
+      l&rsquo;aperitiu o donen car&agrave;cter a una amanida.
+      El pa, cuit di&agrave;riament, destaca per la seva crosta cruixent i molla suau, convertint-se en base noble
+       per a qualsevol combinaci&oacute;.
+    </p>
+    <img src="./img/petits_demo.jpg" alt="Petits Capricis" class="fotos">
+    <p>
+      <strong>La pasta</strong>, elaborada amb farines seleccionades, &eacute;s el punt de partida per a receptes que combinen
+      tradici&oacute; i creativitat.
+      <strong>Les salses</strong>, des de les m&eacute;s suaus fins a les m&eacute;s intenses, activen el gust i completen 
+      l&rsquo;experi&egrave;ncia.
+      I <strong>la xocolata, amb alt percentatge de cacau</strong> o farcida de sabors inesperats, sedueix els paladars m&eacute;s 
+      exigents amb un final dol&ccedil;, intens i memorable.
+      Cada producte &eacute;s una invitaci&oacute; a gaudir sense pressa, a regalar-se un moment que no es necessita
+      per&ograve; que es desitja.</p>
+  </section>
+  <section id="formatges">
+    <h2>Formatges</h2>
+    <img src="./img/formatges_demo.png" alt="Formatges" class="fotos">
+    <p>
+      A la nostra botiga, els formatges s&oacute;n molt m&eacute;s que un aliment: s&oacute;n fragments de paisatge, 
+      mem&ograve;ria i car&agrave;cter. <strong>El de b&uacute;fala</strong> aporta una cremositat intensa, amb matisos que sedueixen 
+      des del primer tast.
+      <strong>La llet de cabra</strong>, amb el seu toc agre i fresc, dona lloc a formatges valents, lleugers però amb personalitat marcada.
+    </p>
+    <img src="./img/fusta_formatges.png" alt="Fusta de formatges" class="fotos">
+    <p><strong>Els d&rsquo;ovella</strong>, m&eacute;s densos i untuosos, evoquen tradici&oacute; i territori, amb sabors que perduren.
+      I el de <strong>vaca</strong>, vers&agrave;til i suau, ofereix una gamma que va des de la tendresa fins a la maduresa m&eacute;s profunda.
+      Cada peça &eacute;s una invitaci&oacute; a explorar textures, aromes i intensitats, pensada per a
+      paladars que busquen autenticitat i bon gust.
+    </p>
+  </section>
+  <section id="embotits">
+    <h2>Embotits</h2>
+    <img src="./img/embotits_demo.png" alt="Embotits de porc" class="fotos">
+    <p>
+      <strong></strong>Els embotits de porc que oferim s&oacute;n el resultat d&rsquo;un saber antic</strong>,
+      transm&egrave;s amb paci&egrave;ncia i respecte pel producte. Cada peça &eacute;s una s&iacute;ntesi de temps,
+       textura i intensitat. <strong>El fuet, prim i arom&agrave;tic</strong>, conserva la seva ess&egrave;ncia amb
+        un toc subtil de pebre. <strong>La llonganissa, 
+      curada lentament</strong>, revela sabors profunds i una consist&egrave;ncia que convida a repetir. <strong>El xori&ccedil;o, amb el seu
+     punt fumat i especiat</strong>, enc&eacute;n el paladar amb car&agrave;cter. I el bull, suau i delicat, aporta una nota tradicional que reconforta.
+    </p>
+    <br>
+    <p>
+      <strong>Tots els embotits s&oacute;n elaborats amb carn seleccionada i condiments naturals</strong>, pensats per ser compartits, 
+      degustats amb pa r&uacute;stic o gaudits en solitari, com un homenatge al gust aut&egrave;ntic.
+    </p>
+  </section>
+  <section id="contacte">
+    <h2>Contacte</h2>
+    <img src="./img/carnisseria_moderna_demo.jpeg" alt="Carnisseria moderna" class="fotos">
+    <p>
+      <em><strong>Nota:</strong> Les dades que apareixen a continuaci&oacute; s&oacute;n perqu&egrave; puguis contactar 
+        amb l'empresa responsable del disseny: SomaTIC Asturias. Si tens en ment un web, una soluci&oacute; digital o
+        simplement vols explorar idees, estarem encantats d'escoltar-te.</em>
+    </p>
+    <br>
+    <div class="contacto">
+    <ul>
+      <li><strong>Correu electr&ograve;nic:</strong> <a href="mailto:info@somaticasturias.es">info@somaticasturias.es</a></li>
+      <li><strong>P&agrave;gina web:</strong> <a href="https://www.somaticasturias.es/" target="_blank">SomaTIC Asturias</a></li>
+      <li><a href="https://wa.me/34623784772?text=Hola%2C%20quiero%20más%20información%20sobre%20vuestros%20proyectos" target="_blank"><strong>Contacte per WhatsApp</strong></a>
+      <li><strong>Ubicaci&oacute; f&iacute;sica:</strong> Siero, Principado de Asturias, España</li>
+      <li><strong>Horari d'atenci&oacute;:</strong> Dilluns a divendres · 10:00 h a 18:00 h </li>
+    </ul>
+    </div>
+  <div class="mapa" id="map"></div>
+  </section>
+  <footer class="pie">
+    <div class="logo-valid">
+    <img src="https://img.shields.io/badge/HTML5-valid-brightgreen" alt="HTML5 Validado">
+    </div>
+    <div class="enlace">
+    <a href="./pag/sobredemo.html">Sobre aquesta pàgina</a>
+    </div>
+  </footer>
+  <button id="tornar-adalt" title="Tornar a dalt">⬆</button>
+<script src="./js/index.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</body>
+</html>
